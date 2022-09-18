@@ -69,4 +69,8 @@ log.info("Dir: "+dir)
 version = sys.version
 log.info("Python Version: "+version)
 
+progressor = platform.processor()
+progressor = str(progressor)
+log.info("CPU: "+progressor)
+
 print("\n\n\n\n")
