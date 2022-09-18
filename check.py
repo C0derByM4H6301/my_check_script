@@ -62,6 +62,14 @@ release = platform.release()
 release = str(release)
 log.info("Release: "+release)
 
+bit = platform.machine()
+bit = str(bit)
+log.info("Bit: "+bit)
+
+plat = platform.platform()
+plat = str(plat)
+log.info("Platform: "+plat)
+
 dir = os.getcwd()
 dir = str(dir)
 log.info("Dir: "+dir)
