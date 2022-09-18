@@ -81,4 +81,3 @@ progressor = platform.processor()
 progressor = str(progressor)
 log.info("CPU: "+progressor)
 
-print("\n\n\n\n")
