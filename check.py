@@ -5,6 +5,7 @@ import platform
 import socket 
 from requests import get
 import sys
+
 """
 if sys.platform != "linux":
 	os.system("cls")
@@ -81,3 +82,16 @@ progressor = platform.processor()
 progressor = str(progressor)
 log.info("CPU: "+progressor)
 
+
+
+def find_service_name(): 
+    protocolname = 'tcp' 
+    for port in [80, 25]: 
+        print ("Port: %s => service name: %s" %(port, socket.getservbyport(port, protocolname))) 
+     
+    print ("Port: %s => service name: %s" %(53, socket.getservbyport(53, 'udp'))) 
+     
+#if __name__ == '__main__': 
+#    find_service_name() 
+log.info("finding service")
+find_service_name()
